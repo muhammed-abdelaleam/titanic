@@ -13,6 +13,7 @@ feature_cols = [
 
 
 def load_data(file_name):
+    """Load data from CSV, return X & y"""
     df = pd.read_csv(file_name)
 
     dfX = df[feature_cols].copy()
